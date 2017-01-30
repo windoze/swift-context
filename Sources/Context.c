@@ -281,7 +281,7 @@ asm (
 );
 
 void
-coro_create (coro_context *ctx, coro_func coro, void *arg, void *sptr, unsigned int ssize)
+coro_create (coro_context *ctx, coro_func coro, void *arg, void *sptr, size_t ssize)
 {
   coro_context nctx;
   if (!coro)

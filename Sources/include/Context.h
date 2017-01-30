@@ -66,7 +66,7 @@ void coro_create (coro_context *ctx, /* an uninitialised coro_context */
                   void (*coro)(void *),    /* the coroutine code to be executed */
                   void *arg,         /* a single pointer passed to the coro */
                   void *sptr,        /* start of stack area */
-                  unsigned int ssze);      /* size of stack area in bytes */
+                  size_t ssze);      /* size of stack area in bytes */
 
 #if __i386__ || __x86_64__
 void __attribute__ ((__noinline__, __regparm__(2)))
