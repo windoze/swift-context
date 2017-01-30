@@ -385,7 +385,7 @@ coro_create (coro_context *ctx, coro_func coro, void *arg, void *sptr, unsigned 
 #endif
 
 int
-coro_stack_alloc (struct coro_stack *stack, unsigned int size)
+coro_stack_alloc (struct coro_stack *stack, size_t size)
 {
   if (!size)
     size = 256 * 1024;

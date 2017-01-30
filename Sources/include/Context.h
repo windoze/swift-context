@@ -78,9 +78,9 @@ coro_transfer (coro_context *prev, coro_context *next);
 typedef struct coro_stack
 {
   void *sptr;
-  unsigned int ssze;
+  size_t ssze;
 } coro_stack;
 
-int coro_stack_alloc (coro_stack *stack, unsigned int size);
+int coro_stack_alloc (coro_stack *stack, size_t size);
 
 void coro_stack_free (coro_stack *stack);
